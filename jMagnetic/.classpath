@@ -17,5 +17,7 @@
 	<classpathentry kind="lib" path="lib/log4j-1.2.14.jar"/>
 	<classpathentry kind="lib" path="lib/QuickHelp.jar"/>
 	<classpathentry kind="lib" path="lib/skinlf.jar"/>
+	<classpathentry kind="lib" path="lib/quaqua.jar"/>
+	<classpathentry kind="lib" path="lib/swing-layout.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
