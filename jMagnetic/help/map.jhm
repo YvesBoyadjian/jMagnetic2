@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE map PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN" "http://java.sun.com/products/javahelp/map_1_0.dtd">
+<map version="1.0">
+  <mapID target="credits_html" url="docs/credits.html"/>
+  <mapID target="changelog_html" url="docs/changelog.html"/>
+  <mapID target="interpreter_html" url="docs/interpreter.html"/>
+  <mapID target="faq_html" url="docs/faq.html"/>
+  <mapID target="license_html" url="docs/license.html"/>
+  <mapID target="music_html" url="docs/music.html"/>
+  <mapID target="options_html" url="docs/options.html"/>
+  <mapID target="storyfiles_html" url="docs/storyfiles.html"/>
+  <mapID target="gamemanuals_html" url="docs/gamemanuals.html"/>
+  <mapID target="graphics_html" url="docs/graphics.html"/>
+  <mapID target="requirements_html" url="docs/requirements.html"/>
+  <mapID target="titlescreens_html" url="docs/titlescreens.html"/>
+  <mapID target="installation_html" url="docs/installation.html"/>
+  <mapID target="quickstart_html" url="docs/quickstart.html"/>
+  <mapID target="hints_html" url="docs/hints.html"/>
+  <mapID target="overview_html" url="docs/overview.html"/>
+<mapID target="Overview" url="Overview"/></map>

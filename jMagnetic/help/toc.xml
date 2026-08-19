@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE toc PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN" "http://java.sun.com/products/javahelp/toc_2_0.dtd">
+<toc version="2.0">
+  <tocitem target="overview_html" text="Overview"/>
+  <tocitem target="requirements_html" text="System requirements"/>
+  <tocitem target="quickstart_html" text="Quickstart"/>
+  <tocitem target="installation_html" text="Installation &amp; first steps"/>
+  <tocitem text="Game files">
+    <tocitem target="storyfiles_html" text="Story files"/>
+    <tocitem target="graphics_html" text="Graphics files"/>
+    <tocitem target="hints_html" text="Hints files"/>
+    <tocitem target="titlescreens_html" text="Title screens"/>
+    <tocitem target="music_html" text="Music files"/>
+    <tocitem target="gamemanuals_html" text="Game manuals"/>
+  </tocitem>
+  <tocitem text="Using JMagnetic">
+    <tocitem target="interpreter_html" text="Introduction and basic usage"/>
+    <tocitem target="options_html" text="Options"/>
+    <tocitem target="faq_html" text="Frequently asked questions"/>
+  </tocitem>
+  <tocitem target="credits_html" text="Credits"/>
+  <tocitem target="changelog_html" text="Changelog"/>
+  <tocitem target="license_html" text="License"/>
+</toc>

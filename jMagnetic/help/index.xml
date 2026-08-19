@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE index PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN" "http://java.sun.com/products/javahelp/index_2_0.dtd">
+<index version="2.0">
+  <indexitem text="music">
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="music_html" text="music.html"/>
+    <indexitem target="quickstart_html" text="quickstart.html"/>
+    <indexitem target="installation_html" text="installation.html"/>
+  </indexitem>
+  <indexitem text="files">
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="music_html" text="music.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="storyfiles_html" text="storyfiles.html"/>
+    <indexitem target="hints_html" text="hints.html"/>
+    <indexitem target="titlescreens_html" text="titlescreens.html"/>
+    <indexitem target="license_html" text="license.html"/>
+    <indexitem target="quickstart_html" text="quickstart.html"/>
+    <indexitem target="installation_html" text="installation.html"/>
+    <indexitem target="graphics_html" text="graphics.html"/>
+    <indexitem target="gamemanuals_html" text="gamemanuals.html"/>
+  </indexitem>
+  <indexitem text="save">
+    <indexitem target="faq_html" text="faq.html"/>
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="quickstart_html" text="quickstart.html"/>
+  </indexitem>
+  <indexitem text="select">
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="changelog_html" text="changelog.html"/>
+    <indexitem target="installation_html" text="installation.html"/>
+  </indexitem>
+  <indexitem text="hints">
+    <indexitem target="faq_html" text="faq.html"/>
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="hints_html" text="hints.html"/>
+    <indexitem target="changelog_html" text="changelog.html"/>
+  </indexitem>
+  <indexitem text="menu">
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="license_html" text="license.html"/>
+  </indexitem>
+  <indexitem text="Magnetic Windows">
+    <indexitem target="faq_html" text="faq.html"/>
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="hints_html" text="hints.html"/>
+    <indexitem target="graphics_html" text="graphics.html"/>
+  </indexitem>
+  <indexitem text="credits">
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+  </indexitem>
+  <indexitem text="script">
+    <indexitem target="faq_html" text="faq.html"/>
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="license_html" text="license.html"/>
+  </indexitem>
+  <indexitem text="title">
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="music_html" text="music.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="titlescreens_html" text="titlescreens.html"/>
+    <indexitem target="quickstart_html" text="quickstart.html"/>
+    <indexitem target="installation_html" text="installation.html"/>
+  </indexitem>
+  <indexitem text="help">
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="hints_html" text="hints.html"/>
+    <indexitem target="changelog_html" text="changelog.html"/>
+    <indexitem target="credits_html" text="credits.html"/>
+  </indexitem>
+  <indexitem text="file">
+    <indexitem target="faq_html" text="faq.html"/>
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="music_html" text="music.html"/>
+    <indexitem target="hints_html" text="hints.html"/>
+    <indexitem target="titlescreens_html" text="titlescreens.html"/>
+    <indexitem target="credits_html" text="credits.html"/>
+    <indexitem target="license_html" text="license.html"/>
+    <indexitem target="graphics_html" text="graphics.html"/>
+    <indexitem target="gamemanuals_html" text="gamemanuals.html"/>
+    <indexitem target="changelog_html" text="changelog.html"/>
+    <indexitem target="storyfiles_html" text="storyfiles.html"/>
+    <indexitem target="quickstart_html" text="quickstart.html"/>
+    <indexitem target="installation_html" text="installation.html"/>
+  </indexitem>
+  <indexitem text="directory">
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="quickstart_html" text="quickstart.html"/>
+    <indexitem target="installation_html" text="installation.html"/>
+  </indexitem>
+  <indexitem text="load">
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="interpreter_html" text="interpreter.html"/>
+    <indexitem target="storyfiles_html" text="storyfiles.html"/>
+    <indexitem target="changelog_html" text="changelog.html"/>
+    <indexitem target="overview_html" text="overview.html"/>
+    <indexitem target="installation_html" text="installation.html"/>
+    <indexitem target="graphics_html" text="graphics.html"/>
+  </indexitem>
+  <indexitem text="graphics">
+    <indexitem target="faq_html" text="faq.html"/>
+    <indexitem target="options_html" text="options.html"/>
+    <indexitem target="changelog_html" text="changelog.html"/>
+    <indexitem target="overview_html" text="overview.html"/>
+    <indexitem target="credits_html" text="credits.html"/>
+    <indexitem target="quickstart_html" text="quickstart.html"/>
+    <indexitem target="installation_html" text="installation.html"/>
+    <indexitem target="graphics_html" text="graphics.html"/>
+  </indexitem>
+  <indexitem text="java">
+    <indexitem target="credits_html" text="credits.html"/>
+    <indexitem target="installation_html" text="installation.html"/>
+  </indexitem>
+  <indexitem text="license">
+    <indexitem target="overview_html" text="overview.html"/>
+    <indexitem target="license_html" text="license.html"/>
+  </indexitem>
+  <indexitem text="options">
+    <indexitem target="options_html" text="options.html"/>
+  </indexitem>
+  <indexitem text="preferences">
+    <indexitem target="faq_html" text="faq.html"/>
+  </indexitem>
+</index>

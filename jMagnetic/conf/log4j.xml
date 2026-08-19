@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<appender name="common-log" class="org.apache.log4j.RollingFileAppender">
+            <param name="File"   value="${app.home}logs/jmagnetic.log" />
+            <param name="Append" value="false" />	    
+	    <param name="MaxFileSize" value="50MB" />
+	    <param name="MaxBackupIndex" value="0" />
+	    
+		<layout class="org.apache.log4j.PatternLayout">
+  		  <param name="ConversionPattern"
+		         value="%r [%t] %p %C{2}: %m\n" />
+		</layout>		
+	</appender>
+	
+	<appender name="ui-log" class="org.apache.log4j.RollingFileAppender">
+            <param name="File"   value="${app.home}logs/jmagnetic_ui.log" />
+            <param name="Append" value="false" />	    
+	    <param name="MaxFileSize" value="20MB" />
+	    <param name="MaxBackupIndex" value="0" />
+	    
+		<layout class="org.apache.log4j.PatternLayout">
+  		  <param name="ConversionPattern"
+		         value="%r [%t] %p %C{2}: %m\n" />
+		</layout>		
+	</appender>
+
+	<appender name="snd-log" class="org.apache.log4j.RollingFileAppender">
+            <param name="File"   value="${app.home}logs/jmagnetic_music.log" />
+            <param name="Append" value="false" />	    
+	    <param name="MaxFileSize" value="20MB" />
+	    <param name="MaxBackupIndex" value="0" />
+	    
+		<layout class="org.apache.log4j.PatternLayout">
+  		  <param name="ConversionPattern"
+		         value="%r [%t] %p %C{2}: %m\n" />
+		</layout>		
+	</appender>
+
+	<appender name="hnt-log" class="org.apache.log4j.RollingFileAppender">
+            <param name="File"   value="${app.home}logs/jmagnetic_hints.log" />
+            <param name="Append" value="false" />	    
+	    <param name="MaxFileSize" value="20MB" />
+	    <param name="MaxBackupIndex" value="0" />
+	    
+		<layout class="org.apache.log4j.PatternLayout">
+  		  <param name="ConversionPattern"
+		         value="%r [%t] %p %C{2}: %m\n" />
+		</layout>		
+	</appender>
+
+	<appender name="gfx-log" class="org.apache.log4j.RollingFileAppender">
+            <param name="File"   value="${app.home}logs/jmagnetic_gfx.log" />
+            <param name="Append" value="false" />	    
+	    <param name="MaxFileSize" value="20MB" />
+	    <param name="MaxBackupIndex" value="0" />
+	    
+		<layout class="org.apache.log4j.PatternLayout">
+  		  <param name="ConversionPattern"
+		         value="%r [%t] %p %C{2}: %m\n" />
+		</layout>		
+	</appender>
+
+	<appender name="core-log" class="org.apache.log4j.RollingFileAppender">
+            <param name="File"   value="${app.home}logs/jmagnetic_core.log" />
+            <param name="Append" value="false" />	    
+	    <param name="MaxFileSize" value="100MB" />
+	    <param name="MaxBackupIndex" value="0" />
+	    
+		<layout class="org.apache.log4j.PatternLayout">
+  		  <param name="ConversionPattern"
+		         value="%r [%t] %p %C{2}: %m\n" />
+		</layout>		
+	</appender>
+
+	<category name="logsnd">
+	  <priority value="debug" />
+  	  <appender-ref ref="snd-log" />
+	</category>
+	
+	<category name="loghnt">
+	  <priority value="debug" />
+  	  <appender-ref ref="hnt-log" />
+	</category>
+	
+	<category name="loggfx">
+	  <priority value="debug" />
+  	  <appender-ref ref="gfx-log" />
+	</category>
+
+	<category name="logemu">
+	  <priority value="debug" />
+  	  <appender-ref ref="core-log" />
+	</category>
+
+	<category name="logui">
+	  <priority value="debug" />
+  	  <appender-ref ref="ui-log" />
+	</category>
+
+	<root>
+	   <priority value ="error" />
+   	   <appender-ref ref="common-log" />
+	</root>
+
+</log4j:configuration>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Using the interpreter</title>
+</head>
+
+<body>
+<h1>Using the interpreter</h1>
+<h3>Selecting and starting games</h3>
+<p>When starting the interpreter it will search the default game files directory for story files and if any are found offer you the following game selection dialog:</p>
+<p><img src="images/gameselect.jpg" alt="" width="654" height="480"></p>
+<p>Start your desired game by pressing the Play button. Some of the controls are not available for all of the games, e.g. the version selector is only visible for games that have a classic and a Magnetic windows version. If JMagnetic does not find any story files in the gamefiles directory a common file open dialog will open to select a story file manually</p>
+<p>After selecting your game the main interpreter window opens and - if available - the title screen of the game is displayed</p>
+<p><img src="images/interpreter.jpg" alt="" width="600" height="600"></p>
+<p>Please note: Depending on your operating system, the menu bar might be located somewhere else, e.g. on Mac OS X the JMagnetic menu bar will integrate into the system menu bar like native applications. The status bar is only visible for classic Magnetic Scrolls games, the Magnetic Windows games did not use it.</p>
+<h3>Playing</h3>
+<p>Your commands to the game are entered at the User input field at the bottom of the interpreter window. For general advices on playing text adventure please refer to the various resources in the internet. The usage of the Magnetic Scrolls adventures is explained in the original game manuals that can be found at the Magnetic Scrolls Memorial web site. Some important commands:</p>
+<table width="70%" border="0" cellspacing="4" cellpadding="4">
+  <tr>
+    <td width="6%" valign="top" nowrap><strong>SAVE</strong></td>
+    <td width="94%">stores your game progress to a file for later resuming your game. When playing classic games enter * as filename to open a common file save dialog</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap><strong>LOAD</strong></td>
+    <td width="94%">loads a previously save game progress and resumes gaming. When playing classic games enter * as filename to open a common file open dialog</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap><strong>QUIT</strong></td>
+    <td width="94%">ends the current session</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap><strong>RESTART</strong></td>
+    <td width="94%">restarts the current game</td>
+  </tr>
+</table>
+<p>Additionally there are some special interpreter commands available (mind the leading #):</p>
+<table width="100%" border="0" cellspacing="4" cellpadding="4">
+  <tr>
+    <td width="6%" nowrap><strong>#seed</strong></td>
+    <td width="94%">makes games randomness predictable and sets the internal randomiser to a predefined value. This is important when using the scripting feature of JMagnetic to ensure that the game responds equally when creating the script and running the script</td>
+  </tr>
+  <tr>
+    <td nowrap><strong>#undo</strong></td>
+    <td width="94%">Takes back the last game command. Note: The original games do not have an undo feature, so this is to be considered experimental!</td>
+  </tr>
+  <tr>
+    <td nowrap><strong>#logoff</strong></td>
+    <td width="94%">stops scripting</td>
+  </tr>
+</table>
+<h3>Menus</h3>
+<p>The menu bar provides access to additional functions:</p>
+<table width="100%" border="0" cellspacing="4" cellpadding="4">
+  <tr>
+    <td colspan="2" bgcolor="#CCCCCC"><strong><font color="#000099">File menu</font></strong></td>
+  </tr>
+  <tr>
+    <td width="6%" valign="top"><img src="images/filemenu.jpg" width="156" height="196"></td>
+    <td width="94%"><p><strong>Start new game</strong> ends the current game session and opens the game selection dialog.</p>
+      <p><strong>Open script</strong> opens a file open dialog to select a command input file, which will usually have   been produced using the Save script menu item. The game will play back all the   commands in the file as if the user had typed them in.</p>
+      <p><strong>Save script</strong> opens a file save dialog to select a file to save command input to. This file   will contain the text of all commands input by the user. Use the <em>#logoff</em> command to turn recording off. Please note: If you want to play the script later, you should set a specific value for the randomiser with the <em>#seed</em> command.</p>
+      <p><strong>Save transcript</strong> opens a file save dialog to select a file to save the script of the current game   to. The script contains all text output by the game and commands input by the   user. Use the <em>#logoff</em> command to turn scripting off. </p>
+      <p><strong>Preferences</strong> open the JMagnetic <a href="options.html">configuration</a> dialog.</p>
+      <p><strong>Exit</strong> exits the interpreter. </p></td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#CCCCCC"><strong><font color="#000099">Edit menu</font></strong></td>
+  </tr>
+  <tr>
+    <td><img src="images/editmenu.jpg" width="183" height="163"></td>
+    <td><p>The Edit menu provides access to the standard clipboard and editing functions. You can use it to transfer text between the game output window and the user input field.</p>
+    <p><strong>Save image as PNG</strong> stores the active game picture as a PNG graphics file.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#CCCCCC"><strong><font color="#000099">Tools menu</font></strong></td>
+  </tr>
+  <tr>
+    <td><img src="images/toolmenu.jpg" width="152" height="55"></td>
+    <td><strong>Myth password</strong> generates a user/password combination for the owner check in Myth.</td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#CCCCCC"><strong><font color="#000099">Help menu</font></strong></td>
+  </tr>
+  <tr>
+    <td><img src="images/helpmenu.jpg" alt="" width="95" height="88"></td>
+    <td><p><strong>Help</strong> opens this online help</p>
+        <p><strong>About</strong> opens the About dialog, which shows the version number and credits for this   version of Windows Magnetic. </p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

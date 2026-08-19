@@ -1,0 +1,44 @@
+/*-----------------------------------------------------------------------------
+*   JMagnetic 2 
+*   An interpreter for Magnetic Scrolls games
+*	
+*   based on Magnetic 2.3 written by Niclas Karlsson, David Kinder,
+*   Stefan Meier and Paul David Doherty 
+*   
+*   written by Stefan Meier
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 2 of the License, or
+*    (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, write to the Free Software
+*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+*------------------------------------------------------------------------------*/
+
+package org.iflegends.msmemorial.event;
+
+import java.awt.event.*;
+
+/**
+ * A simple class that provides an empty implementation
+ * of the java.awt.ActionListener interface. For use
+ * as an anonymous inner class.
+ */
+public class ActionAdapter implements ActionListener {
+	
+	/**
+	 * Called when a java.awt.ActionEvent occurs onthe
+	 * registered component. This is an empty implementation
+	 * and all subclasses of ActionAdapter should override this
+	 * method.
+	 */
+	public void actionPerformed(ActionEvent e) {
+	}
+}
