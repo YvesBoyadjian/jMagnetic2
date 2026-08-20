@@ -24,6 +24,7 @@
 
 package org.iflegends.msmemorial.swing;
 
+import org.iflegends.msmemorial.util.ImageDoubler;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -36,6 +37,7 @@ public class JImagePanel extends javax.swing.JPanel {
     
   private Category cat = Category.getInstance("ImagePanel");
   private volatile Image image = null;
+  private volatile Image imageBig = null;
     
   protected int picWidth = 0;
   protected int picHeight = 0;
@@ -71,6 +73,7 @@ public class JImagePanel extends javax.swing.JPanel {
   public JImagePanel( Image img ) {
     super();
     this.image = img;
+    this.imageBig = ImageDoubler.doubleImage(ImageDoubler.doubleImage(ImageDoubler.doubleImage((BufferedImage)image)));
   }
 
   /**
@@ -95,6 +98,7 @@ public class JImagePanel extends javax.swing.JPanel {
   {
     cat.debug("Clearing internal image");
     image = null;
+    imageBig = null;
   }	
     
   /**
@@ -131,6 +135,7 @@ public class JImagePanel extends javax.swing.JPanel {
   public void setImage(Image image)
   {
     this.image = image;
+    this.imageBig = ImageDoubler.doubleImage(ImageDoubler.doubleImage(ImageDoubler.doubleImage((BufferedImage)image)));
        
     if(isVisible())
     {
@@ -150,11 +155,11 @@ public class JImagePanel extends javax.swing.JPanel {
         
     if (isVisible())  {
     	 //System.out.println("Width="+this.getWidth()+" , Height="+this.getHeight());
-      if (image != null) {
+      if (imageBig != null) {
         float widthProp = (float)(this.getWidth()) / 
-                          (float)(image.getWidth(this));
+                          (float)(imageBig.getWidth(this));
         float heightProp = (float)(this.getHeight()-gfxMargin) / 
-                           (float)(image.getHeight(this));
+                           (float)(imageBig.getHeight(this));
         cat.debug("Image width proportion is "+widthProp);
         cat.debug("Image height proportion is "+heightProp);
     	float scaleFac;
@@ -164,10 +169,10 @@ public class JImagePanel extends javax.swing.JPanel {
           scaleFac = heightProp;
         }
         cat.debug("Reference scale factor is "+scaleFac);
-        g.drawImage(image, (this.getWidth()-
-                     (int)((float)(image.getWidth(this))*scaleFac))/2, gfxMargin/2,
-             	     (int)((float)(image.getWidth(this))*scaleFac),
-             	     (int)((float)(image.getHeight(this))*scaleFac), this);
+        g.drawImage(imageBig, (this.getWidth()-
+                     (int)((float)(imageBig.getWidth(this))*scaleFac))/2, gfxMargin/2,
+             	     (int)((float)(imageBig.getWidth(this))*scaleFac),
+             	     (int)((float)(imageBig.getHeight(this))*scaleFac), this);
       }    	           
     }
   }
