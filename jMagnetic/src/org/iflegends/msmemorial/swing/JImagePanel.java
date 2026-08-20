@@ -35,7 +35,7 @@ import com.sixlegs.png.PngImage;
 public class JImagePanel extends javax.swing.JPanel {
     
   private Category cat = Category.getInstance("ImagePanel");
-  private Image image = null;
+  private volatile Image image = null;
     
   protected int picWidth = 0;
   protected int picHeight = 0;
@@ -145,8 +145,8 @@ public class JImagePanel extends javax.swing.JPanel {
   public void paintComponent(Graphics g)
   {
     super.paintComponent(g);
-	//g.setColor(Color.BLACK);
-	 //g.fillRect(0, 0, this.getWidth(), this.getHeight());
+	g.setColor(getBackground());
+	g.fillRect(0, 0, this.getWidth(), this.getHeight());
         
     if (isVisible())  {
     	 //System.out.println("Width="+this.getWidth()+" , Height="+this.getHeight());

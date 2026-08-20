@@ -311,7 +311,7 @@ public class JMagneticImgPanel extends org.iflegends.msmemorial.swing.JImagePane
    * @param picData the actual image data
    * @param picPalette a 16 color palette for the image
    */
-  public synchronized void setGraphic(int picId, char[] picData, int dataOffset, int[]  picPalette )
+  public synchronized Color setGraphic(int picId, char[] picData, int dataOffset, int[]  picPalette )
   {
     int i,j;
     Graphics gc;
@@ -321,6 +321,11 @@ public class JMagneticImgPanel extends org.iflegends.msmemorial.swing.JImagePane
     clearCache(); 	
     cacheImg = createImage( (int)(picWidth), (int)(picHeight) );      	
     gc = cacheImg.getGraphics();
+    
+    long meanRed = 0;
+    long meanGreen = 0;
+    long meanBlue = 0;
+    
     for (i=0;i < picHeight;i++) {
       for (j=0;j < picWidth;j++) {
         
@@ -334,6 +339,10 @@ public class JMagneticImgPanel extends org.iflegends.msmemorial.swing.JImagePane
             green = (int)Math.sqrt((double)((double)green*(double)green*gamma)); if (green > 255) green = 255;
             blue = (int)Math.sqrt((double)((double)blue*(double)blue*gamma)); if (blue > 255) blue = 255;
          }               
+         
+         meanRed += red;
+         meanGreen += green;
+         meanBlue += blue;
                    
          Color c = new Color(red,green, blue);
         /* 
@@ -351,6 +360,7 @@ public class JMagneticImgPanel extends org.iflegends.msmemorial.swing.JImagePane
     
     setImage(cacheImg);
     picIndex = picId;
+    return new Color((int)(meanRed/picWidth/picHeight),(int)(meanGreen/picWidth/picHeight),(int)(meanBlue/picWidth/picHeight));
   }
 
   /**
