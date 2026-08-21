@@ -14,7 +14,7 @@
     <property name="fish.music" value="fish.mp3"/>
     <property name="fish.story" value="fish.mag"/>
     <property name="fish.title" value="fish.png"/>
-    <property name="gamedir" value="C:&#092;Users&#092;yboya&#092;Downloads&#092;pawnall"/>
+    <property name="gamedir" value="gamefiles"/>
     <property name="gamma" value="0.0"/>
     <property name="guild.graphics" value="guild.gfx"/>
     <property name="guild.lastsave" value=""/>
