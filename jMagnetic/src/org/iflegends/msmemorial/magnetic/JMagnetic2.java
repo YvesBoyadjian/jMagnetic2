@@ -1207,6 +1207,9 @@ public class JMagnetic2 extends javax.swing.JFrame {
 		String install_path = getBasePath();  
 
 		File file = new File(install_path+"conf"+File.separator+"jmagnetic2.xml");
+		if (!file.exists()) {
+			file = new File("conf"+File.separator+"jmagnetic2.xml");
+		}
 		XMLFileHandler handler = new XMLFileHandler();
 		handler.setFile(file);
 		try {
