@@ -1332,7 +1332,7 @@ public class JMagnetic2 extends javax.swing.JFrame {
 	   
 	   public void setGraphic(int picId, char[] PicData, int dataOffset, int[]  PicPalette ) {
 	  	int currentLocation = splitPane.getDividerLocation();
-	  	int newLocation = graphicsPanel.getPicHeight()+20;
+	  	int newLocation = graphicsPanel.getPicHeight()*4+20;
 	  	splitPane.setDividerLocation( Math.max(currentLocation, newLocation) );
 	  	graphicsPanel.setBackground(graphicsPanel.setGraphic(picId, PicData, dataOffset, PicPalette ));
 	   }
