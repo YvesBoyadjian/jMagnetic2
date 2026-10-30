@@ -28,6 +28,9 @@ import org.iflegends.msmemorial.util.ImageDoubler;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.lang.reflect.InvocationTargetException;
+
+import javax.swing.SwingUtilities;
 
 import org.apache.log4j.Category;
 
@@ -43,6 +46,8 @@ public class JImagePanel extends javax.swing.JPanel {
   protected int picHeight = 0;
   private int gfxMargin = 10;
   protected double scale = 1.0;
+  
+  private float imagePercent;
     
   /**
    * Creates a new JImagePanel.
@@ -140,6 +145,7 @@ public class JImagePanel extends javax.swing.JPanel {
     if(isVisible())
     {
       cat.debug("Repainting after image set");
+      imagePercent = 0f;
       repaint();
     }
   }
@@ -173,6 +179,23 @@ public class JImagePanel extends javax.swing.JPanel {
                      (int)((float)(imageBig.getWidth(this))*scaleFac))/2, gfxMargin/2,
              	     (int)((float)(imageBig.getWidth(this))*scaleFac),
              	     (int)((float)(imageBig.getHeight(this))*scaleFac), this);
+    	g.setColor(getBackground());
+    	g.fillRect(0, (int)(this.getHeight() * imagePercent), this.getWidth(), (int)(this.getHeight() * (1f - imagePercent)));
+    	if (imagePercent < 1f) {
+    		imagePercent += 0.001f;
+    		try {
+				Thread.sleep(5);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    		if (imagePercent > 1f) {
+    			imagePercent = 1f;
+    		}
+				SwingUtilities.invokeLater(()->{
+					repaint();
+				});
+    	}
       }    	           
     }
   }

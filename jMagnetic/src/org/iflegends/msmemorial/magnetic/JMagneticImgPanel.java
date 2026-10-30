@@ -339,11 +339,11 @@ public class JMagneticImgPanel extends org.iflegends.msmemorial.swing.JImagePane
             green = (int)Math.sqrt((double)((double)green*(double)green*gamma)); if (green > 255) green = 255;
             blue = (int)Math.sqrt((double)((double)blue*(double)blue*gamma)); if (blue > 255) blue = 255;
          }               
-         
-         meanRed += red;
-         meanGreen += green;
-         meanBlue += blue;
-                   
+         if (i>= picHeight/2) {
+        	 meanRed += red;
+        	 meanGreen += green;
+        	 meanBlue += blue;
+         }
          Color c = new Color(red,green, blue);
         /* 
         Color c = new Color(
@@ -360,7 +360,7 @@ public class JMagneticImgPanel extends org.iflegends.msmemorial.swing.JImagePane
     
     setImage(cacheImg);
     picIndex = picId;
-    return new Color((int)(meanRed/picWidth/picHeight),(int)(meanGreen/picWidth/picHeight),(int)(meanBlue/picWidth/picHeight));
+    return new Color((int)(2*meanRed/picWidth/picHeight),(int)(2*meanGreen/picWidth/picHeight),(int)(2*meanBlue/picWidth/picHeight));
   }
 
   /**
