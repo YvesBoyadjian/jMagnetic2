@@ -258,7 +258,7 @@ public class JMagneticImgPanel extends org.iflegends.msmemorial.swing.JImagePane
             
          }
 
-         setImage(newImg);
+         setImage(newImg, false);
 
          // Step 2 : Remove frames
          
@@ -358,7 +358,7 @@ public class JMagneticImgPanel extends org.iflegends.msmemorial.swing.JImagePane
       }
     }
     
-    setImage(cacheImg);
+    setImage(cacheImg, true);
     picIndex = picId;
     return new Color((int)(2*meanRed/picWidth/picHeight),(int)(2*meanGreen/picWidth/picHeight),(int)(2*meanBlue/picWidth/picHeight));
   }
@@ -391,7 +391,7 @@ public class JMagneticImgPanel extends org.iflegends.msmemorial.swing.JImagePane
                 (int)(imgtmp.getHeight(this)*hamScale * scale),
                 Image.SCALE_DEFAULT );  
     imgtmp=null;                                        
-    setImage(img2tmp);    
+    setImage(img2tmp, true);    
   }
             
   /**

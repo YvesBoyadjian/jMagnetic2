@@ -129,7 +129,7 @@ public class JImagePanel extends javax.swing.JPanel {
                                         (int)(imgtmp.getHeight(this)* scale),
                                         Image.SCALE_DEFAULT );  
     imgtmp=null;                                        
-    setImage(img2tmp);    
+    setImage(img2tmp, true);    
   }
             
   /**
@@ -137,7 +137,7 @@ public class JImagePanel extends javax.swing.JPanel {
    *
    * @param image Image to be set
    */
-  public void setImage(Image image)
+  public void setImage(Image image, boolean progressive)
   {
     this.image = image;
     this.imageBig = ImageDoubler.doubleImage(ImageDoubler.doubleImage(ImageDoubler.doubleImage((BufferedImage)image)));
@@ -145,7 +145,12 @@ public class JImagePanel extends javax.swing.JPanel {
     if(isVisible())
     {
       cat.debug("Repainting after image set");
-      imagePercent = 0f;
+      if (progressive) {
+    	  imagePercent = 0f;
+      }
+      else {
+    	  imagePercent = 1f;    	  
+      }
       repaint();
     }
   }
